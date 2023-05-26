@@ -6,17 +6,15 @@ body {
 }
 
 h1 {
-  font-size: calc(28px + 8 * ((100vw - 1024px) / (1440 - 1024)));
-  line-height: calc(31px + 8 * ((100vw - 1024px) / (1440 - 1024)));
+  font-size: calc(30px + 6 * ((100vw - 905px) / (1440 - 905)));
 }
 
 h2 {
-  font-size: calc(26px + 7 * ((100vw - 1024px) / (1440 - 1024)));
-  line-height: calc(30px + 7 * ((100vw - 1024px) / (1440 - 1024)));
+  font-size: calc(26px + 6 * ((100vw - 905px) / (1440 - 905)));
 }
 
 p {
-  font-size: calc(16px + 6 * ((100vw - 1024px) / (1440 - 1024)));
+  font-size: calc(16px + 6 * ((100vw - 905px) / (1440 - 905)));
 }
 
 a {
@@ -122,11 +120,11 @@ a:visited {
   padding: 0;
   justify-content: end;
   transition: transform .2s;
-  margin: calc(16px + 8 * ((100vw - 1024px) / (1440 - 1024))) 0 0 0;
+  margin: calc(16px + 8 * ((100vw - 905px) / (1440 - 905))) 0 0 0;
 }
 
 .menu a {
-  font-size: calc(16px + 4 * ((100vw - 1024px) / (1440 - 1024)));
+  font-size: calc(16px + 4 * ((100vw - 905px) / (1440 - 905)));
   color: #A27E6F
 }
 
@@ -205,21 +203,38 @@ a:visited {
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 767px), 
-       screen and (max-height: 767px) {
-        .achievements p {
-          padding: 0;
-        }
+@media screen and (max-width: 905px) {
+  h1 {
+    font-size: calc(24px + 6 * ((100vw - 606px) / (1440 - 606)));
+  }
+  
+  h2 {
+    font-size: calc(20px + 6 * ((100vw - 606px) / (1440 - 606)));
+  }
+  
+  p {
+    font-size: calc(16px + 6 * ((100vw - 606px) / (1440 - 606)));
+  }
 
-        .schools {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
-        }
+  .achievements p {
+    padding: 0;
+  }
 
-        .schools img {
-          margin-bottom: 3%;
-        }
-       }
+  .schools {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .schools img {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 606px) {
+  .photo img {
+    visibility: hidden;
+  }
+}
