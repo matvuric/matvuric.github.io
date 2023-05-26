@@ -216,8 +216,26 @@ a:visited {
     font-size: calc(16px + 6 * ((100vw - 606px) / (1440 - 606)));
   }
 
+  .icons img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .menu li:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
   .achievements p {
     padding: 0;
+  }
+
+  .achievements li:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   .schools {
@@ -230,8 +248,14 @@ a:visited {
   }
 
   .schools img {
-    margin-bottom: 5%;
-    max-width: 90%;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .schools img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   .schools img:last-child {
