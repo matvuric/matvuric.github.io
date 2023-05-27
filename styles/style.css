@@ -333,15 +333,15 @@ a:visited {
 
 @media screen and (max-width: 905px) {
   h1 {
-    font-size: calc(24px + 6 * ((100vw - 606px) / (1440 - 606)));
+    font-size: calc(30px + 6 * ((100vw - 905px) / (905 - 606)));
   }
   
   h2 {
-    font-size: calc(20px + 6 * ((100vw - 606px) / (1440 - 606)));
+    font-size: calc(26px + 6 * ((100vw - 905px) / (905 - 606)));
   }
   
   p {
-    font-size: calc(16px + 6 * ((100vw - 606px) / (1440 - 606)));
+    font-size: calc(20px + 6 * ((100vw - 905px) / (905 - 606)));
   }
 
   .icons img:hover {
@@ -396,17 +396,10 @@ a:visited {
 
   .block {
     flex: 0 1 49%;
-    margin-bottom: 2%;
-    border-radius: 15px;
-    background-color: #fff;
-    -webkit-transition: all 0.3s ease;;
-    -moz-transition: all 0.3s ease;;
-    -o-transition: all 0.3s ease;;
-    transition: all 0.3s ease;
   }
 
   .block img {
-    height: calc(90px + 40 * ((100vw - 606px) / (1440 - 606)));
+    height: calc(90px + 40 * ((100vw - 905px) / (905 - 606)));
     width: 100%;
     object-fit: cover;
     border-radius: 15px;
@@ -414,39 +407,87 @@ a:visited {
 
   .mini__block {
     flex: 0 1 30%;
-    padding: 1%;
-    margin-bottom: 1%;
-    border-radius: 15px;
-    background-color: #fff;
-    -webkit-transition: all 0.3s ease;;
-    -moz-transition: all 0.3s ease;;
-    -o-transition: all 0.3s ease;;
-    transition: all 0.3s ease;
+  }
+
+  .card__header {
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+    padding: 5% 5% 0 5%;
+    margin: 0;
+    font-size: calc(20px + 6 * ((100vw - 905px) / (905 - 606)));
+  }
+  
+  .card__description {
+    font-size: calc(16px + 6 * ((100vw - 905px) / (905 - 606)));
+  }
+
+  .mini__block p {
+    font-size: calc(16px + 6 * ((100vw - 905px) / (905 - 606)));
+    flex: 0 1 75%;
+    margin: 0;
+    color: #000;
   }
 }
 
 @media screen and (max-width: 606px) {
+  h1 {
+    font-size: calc(24px + 6 * ((100vw - 606px) / (606 - 300)));
+  }
+  
+  h2 {
+    font-size: calc(20px + 6 * ((100vw - 606px) / (606 - 300)));
+  }
+  
+  p {
+    font-size: calc(24px + 6 * ((100vw - 606px) / (606 - 300)));
+  }
+
   .photo img {
     visibility: hidden;
   }
 
   .block {
-    flex: 0 1 60%;
+    flex: 0 1 90%;
   }
 
   .block img {
-    height: calc(90px + 40 * ((100vw - 606px) / (1440 - 606)));
+    height: calc(150px + 100 * ((100vw - 606px) / (606 - 300)));
   }
 
   .mini__block {
     flex: 0 1 45%;
     padding: 1%;
     margin-bottom: 1%;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: #fff;
     -webkit-transition: all 0.3s ease;;
     -moz-transition: all 0.3s ease;;
     -o-transition: all 0.3s ease;;
     transition: all 0.3s ease;
+  }
+
+  .card__header {
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+    padding: 5% 5% 0 5%;
+    margin: 0;
+    font-size: calc(24px + 6 * ((100vw - 606px) / (606 - 300)));
+  }
+  
+  .card__description {
+    font-size: calc(20px + 6 * ((100vw - 606px) / (606 - 300)));
+    padding: 5%;
+    text-align: center;
+    color: #000;
+    margin: 0;
+  }
+
+  .mini__block p {
+    font-size: calc(16px + 6 * ((100vw - 606px) / (606 - 300)));
+    flex: 0 1 75%;
+    margin: 0;
+    color: #000;
   }
 }
